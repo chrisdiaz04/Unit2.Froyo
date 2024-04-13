@@ -1,6 +1,6 @@
 //user is prompted to enter flavors
 function froyoOrder() {
-let userInput = prompt("Enter the flavors you want sperated by commas", "Vanilla, Chocalate, Strawberry, etc");
+let userInput = prompt("Enter the flavors you want sperated by commas", "Vanilla, Chocalate, Strawberry");
 
 const froyoArray = userInput.split(",").map(flavor => flavor.trim())
 
@@ -15,6 +15,7 @@ for (let i = 0; i < froyoArray.length; i++) {
         order[flavors] = 1
         }
     }
-
+    console.log(order);
 }
-console.log(froyoOrder())
+
+froyoOrder()
